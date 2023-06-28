@@ -23,9 +23,6 @@
     "test": "mocha",
     "release": "npm publish"
   },
-  "files": [
-    "cytoscape-edgehandles.js"
-  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/cytoscape/cytoscape.js-edgehandles.git"
