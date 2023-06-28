@@ -1,5 +1,5 @@
 {
-  "name": "cytoscape-edgehandles",
+  "name": "@tigergraph/cytoscape-edgehandles",
   "version": "4.0.1",
   "description": "Edge creation UI extension for Cytoscape",
   "main": "cytoscape-edgehandles.js",
@@ -20,8 +20,12 @@
     "build:release": "run-s build copyright",
     "watch": "webpack --progress --watch",
     "dev": "webpack-dev-server --open",
-    "test": "mocha"
+    "test": "mocha",
+    "release": "npm publish"
   },
+  "files": [
+    "cytoscape-edgehandles.js"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/cytoscape/cytoscape.js-edgehandles.git"
