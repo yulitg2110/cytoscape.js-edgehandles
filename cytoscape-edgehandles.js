@@ -348,7 +348,7 @@ function makeEdges() {
 
   var source = this.sourceNode;
   var target = this.targetNode;
-  var classes = preview ? 'eh-preview' : '';
+  var classes = preview ? 'eh-preview edge-handles' : '';
   var added = cy.collection();
   var canConnect = this.canConnect(target);
 
@@ -450,6 +450,9 @@ function updateEdge() {
         position: {
           x: 0,
           y: 0
+        },
+        data: {
+          nodeID: 'ghostNode'
         }
       });
 
@@ -467,7 +470,8 @@ function updateEdge() {
         group: 'edges',
         data: assign({}, ghostEdgeParams.data, {
           source: sourceNode.id(),
-          target: ghostNode.id()
+          target: ghostNode.id(),
+          directed: true
         }),
         classes: 'eh-ghost eh-ghost-edge'
       }));
