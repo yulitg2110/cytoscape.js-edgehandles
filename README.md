@@ -188,3 +188,6 @@ This project is set up to automatically be published to npm and bower.  To publi
 1. Publish to npm: `npm publish .`
 1. If publishing to bower for the first time, you'll need to run `bower register cytoscape-edgehandles https://github.com/cytoscape&#x2F;edgehandles.git`a
 1. [Make a new release](https://github.com/cytoscape/cytoscape.js-edgehandles/releases/new) for Zenodo.
+
+## Edit history
+* In `src/edgehandles/drawing.js`, changed element attributes and classes.

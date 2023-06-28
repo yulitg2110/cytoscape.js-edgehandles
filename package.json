@@ -7,6 +7,9 @@
     "name": "Max Franz",
     "email": "maxkfranz@gmail.com"
   },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/tigergraph"
+  },
   "scripts": {
     "postpublish": "run-s gh-pages",
     "gh-pages": "gh-pages -d pages",
